@@ -1,0 +1,84 @@
+/* basic reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    max-height: 100vh;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    background-color: rgb(79, 119, 79);
+}
+
+.navitem {
+    display: block;
+    list-style: none;
+    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.navitem:hover {
+    background-color: lightgray;
+    /* outline: 3px solid rgb(79, 119, 79); */
+}
+
+.navitem a {
+    text-decoration: none;
+    padding: 1rem;
+    color: black
+}
+
+header {
+    margin: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid lightgray;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 1rem;
+    /* text-align: center; */
+}
+
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.intro {
+    /* outline: 1px solid lightgray; */
+    margin: 1rem;
+    text-align: start;
+    line-height: 1.5rem;
+    padding: 1rem;
+}
+
+.intro h2 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid lightgray;
+}
+
+.intro p {
+    padding-top: 1rem;
+    padding-bottom: 22rem;
+}
+
+footer {
+    border-top: 2px solid lightgray;
+    margin: 1rem;
+    padding-top: 1rem;
+}
